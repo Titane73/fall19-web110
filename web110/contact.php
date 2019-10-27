@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Ti Hall: WEB110 Portal Website</title>
+     <title>Ti Hall: Contact Form</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/portal.css" />
   <link rel="stylesheet" href="css/nav.css" />
+  <link rel="stylesheet" href="css/forms.css" />
  </head>
  <body>
      <header>
-     <h1>Ti Hall: WEB110 Portal Website</h1>
-     <nav class="topnav" id="myTopnav">
-       <a href="index.html" class="active">Welcome</a>
+     <h1>Ti Hall: Contact Form</h1>
+       <nav class="topnav" id="myTopnav">
+       <a href="index.html">Welcome</a>
        <a href="elements.html">HTML Elements</a>
        <a href="aia.html">AIA</a>
        <a href="big/index.html">Final Project (BIG Website)</a>
@@ -20,27 +21,35 @@
        <a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a>
        <a href="flowchart.html">Flowchart</a>
 <!--       <a href="fp/index.html">Final Project</a>   -->   
-       <a href="contact.php">Contact Ti</a>
+       <a href="contact.php" class="active">Contact Ti</a>
        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
      </header>
      
    <main class="wrapper">
      
-     <img class="desktop" src="images/desktop.jpg" alt="Koi pond at Kubota Garden, Seattle WA" />
        
-     <img class="tablet" src="images/tablet.jpg" alt="Walking bridge at Kubota Garden, Seattle WA" />
+       <h2 class="subheader">Contact Form</h2>
        
-     <img class="phone" src="images/phone.jpg" alt="View from the walking bridge. Kubota Park, Seattle WA" />
-       
-       <h2 class="subheader">About Me</h2>
-       
-       <p>Greetings and salutations.  Welcome to my portal page for Web Authoring at Seattle Central Community College.  After 25 years in the beauty industry I am back in school for a change in career.  I am studying web authoring, database development, and software design this quarter. My original goal was to obtain a database administration certificate. However, I am excited about all the possibilities as I learn more and more.  So I'll have to see where my passions guide me.</p>
+	<?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
 
-       <h3>About The Photos</h3>
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "thomas.ti.hall@gmail.com";  //place your/your client's email address here
+        $toName = "Ti Hall"; //place your client's name here
+        $website = "Web 110 Contact Form";  //place NAME of your client's website
 
-       <p>The photos were taken at Kubota Garden, a 20-acre Japanese garden in the Rainier Beach neighborhood of Seattle, Washington. A public park since 1987, it was started in 1927 by Fujitaro Kubota, a Japanese emigrant. Today, it is maintained as a public park by the Seattle Parks and Recreation and the Kubota Garden Foundation.</p>
+        echo loadContact('simple.php');#demonstrates a simple contact form
+        //echo loadContact('multiple.php');#demonstrates multiple form elements
 
+	?>
+       
      <footer>
       <p><small>&copy; 2019 by <a href="contact.php">Thomas Hall </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
     </footer>
