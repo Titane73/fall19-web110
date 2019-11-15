@@ -242,11 +242,18 @@
          margin: auto;
          width: 90%;
     }
+     
+/*Start of Gallery*/
+    figure {
+         border-radius: 20px;
+     }
      section.gallery {
          width: 90%;
+         border-radius: 20px;
     }
      aside.gallery {
-         width: 90%;
+         width: 60%;
+         border-radius: 10%;
     }
      .contact {
          text-align: center 
