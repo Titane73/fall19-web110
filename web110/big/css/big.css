@@ -48,7 +48,8 @@ h2.article {
 }
  aside.home {
      border: 5px inset #29648a;
-     border-radius: 20px;
+     border-top-left-radius: 20px;
+     border-bottom-left-radius: 20px;
      background-image: radial-gradient(#E7EDFB 75%,#D6D6DE);
 }
  aside h2, h3 {
