@@ -23,6 +23,10 @@
  h1 a {
      text-decoration: none;
 }
+
+h2.article {
+    display: none;
+}
  section {
      margin-left: 10px;
      float: left;
@@ -63,7 +67,7 @@
      margin: auto;
      text-align: center;
 }
- div.contact {
+ section.contact {
      margin: auto;
      align-content: center;
 }
