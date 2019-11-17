@@ -23,6 +23,10 @@
  h1 a {
      text-decoration: none;
 }
+
+h2.article {
+    display: none;
+}
  section {
      margin-left: 10px;
      float: left;
@@ -63,10 +67,12 @@
      margin: auto;
      text-align: center;
 }
- div.contact {
+ section.contact {
      margin: auto;
      align-content: center;
 }
+
+
 
 /*Start of Gallery*/
  figure {
@@ -103,6 +109,8 @@
      text-decoration: none;
 }
 /* End of Gallery*/
+
+
 
 /*Start of CSS Grid*/
  .grid-container {
@@ -157,9 +165,9 @@
 .cited h3 {
     font-size: 1.5em
 }
-
-
 /*End of CSS Grid*/
+
+
 
 /* Start - Embed Responsively styles */
  .embed-container {
@@ -179,6 +187,8 @@
 }
 /* End - Embed Responsively styles */
 
+
+
 /* Hide agenda view of calendar */
  div.embed-container.agenda-view {
      display: none;
@@ -186,11 +196,17 @@
  h2.agenda-view {
      display: none;
 }
+/*END - Hide agenda view */
+
+
  footer {
      padding: 1em;
      text-align: center;
      clear: both 
 }
+
+
+
 /* Calendar rules for lower resolution*/
  @media all and (max-width:780px) {
     /* Show agenda view*/
@@ -208,6 +224,8 @@
          display: none;
     }
 }
+
+
 
 /* MOBILE STYLES */
  @media all and (max-width:600px) {
@@ -228,11 +246,18 @@
          margin: auto;
          width: 90%;
     }
+     
+/*Start of Gallery*/
+    figure {
+         border-radius: 20px;
+     }
      section.gallery {
          width: 90%;
+         border-radius: 20px;
     }
      aside.gallery {
-         width: 90%;
+         width: 60%;
+         border-radius: 10%;
     }
      .contact {
          text-align: center 

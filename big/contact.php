@@ -52,7 +52,7 @@
             </nav>
         </header>
 
-        <div class="contact">
+        <section class="contact">
             <h1>Contact Form</h1>
 
             <?php
@@ -73,7 +73,7 @@
         //echo loadContact('multiple.php');#demonstrates multiple form elements
 
 	?>
-        </div>
+        </section>
 
         <footer>
             <p><small>&copy; 2019 by <a href="contact.php">Contact Thomas Hall </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a></small></p>
